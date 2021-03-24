@@ -1,10 +1,16 @@
 #/usr/bin/env python
 
 import uuid
-from setuptools import setup, find_packages
-from pip.req import parse_requirements
+
+from setuptools import find_packages, setup
 
 import mininews
+
+try:
+    from pip._internal.req import parse_requirements
+except ImportError:
+    from pip.req import parse_requirements
+
 
 
 def get_requirements(source):
