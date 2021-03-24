@@ -19,7 +19,7 @@ def get_requirements(source):
     except TypeError:
         # Older version of pip.
         install_reqs = parse_requirements(source)
-    return set([str(ir.req) for ir in install_reqs])
+    return set([str(ir.requirement) for ir in install_reqs])
 
 setup(
     name='django-mininews',
