@@ -1,3 +1,4 @@
-django >= 1.7
-django-model-utils >= 2.2
+# List here the requirements for running this package.
+django>=1.7
+django-model-utils>=2.2
 
